@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+   <!--------- <title>Responsive Navigation Menu</title>------>
+    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+  </style>
+
+  </head>
+  <body>
+  <nav class="col-s-12 col-12">
+      <div class="logo"><img class="busmap" src="bus.png" ></div><div class="logo">Track<font color="#33cc00
+"> Cedar</font> Buses</div>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a  href="buses.php">Buses</a></li>
+        <li>
+          <a class="hidden" href="schedules.php">Schedules</a>
+          <div class="dropdown">
+          <button class="dropbtn" onclick="schedules()">Schedule</button>
+          <div class="dropdown-content">
+            <a href="beirut-aley.php">Beirut - Aley</a>
+            <a href="beirut-tyr.php">Beirut - Tyr</a>
+            <a href="beirut-tripoli.php">Beirut - Tripoli</a>
+          </div>
+        </div></li>
+        <li><a href="signin.php">Sign In</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="photo"></div>
+    <p class="middleTitle">Coming Soon!</p><br><br>
+
+      <div class="newsContainer">
+        <div class="imgCard1 col-s-4 col-4">
+          <img class="news" src="newRoute.png"><br>
+          <u><b>New Route:</b></u><br>
+          New Aley-Zahle route to be added soon when our buses and stations are ready! We are still training our drivers as this route is a bit tougher than other routes as it has many more vehicles going through it everyday.
+          By the time the bus we had specially ordered for this route is here, we will be more than ready to go!
+        </div>
+        <div class="imgCard2 col-s-4 col-4">
+          <img class="news" src="newRoute2.png"><br>
+          <u><b>New Route:</b></u><br>
+          New Zahle-Baalbeck route to be added soon when our buses and stations are ready! We are still training our drivers as this route is a bit tougher than other routes as it has many more vehicles going through it everyday.
+          By the time the bus we had specially ordered for this route is here, we will be more than ready to go!
+        </div>
+        <div class="imgCard3 col-s-4 col-4">
+          <img class="news" src="newBus.jpg"><br>
+          <u><b>New Buses Soon:</b></u><br>
+          More than 50 buses are on their way to Lebanon ! Which gives us the opportunity to expand and add more routes to make transport easier and cheaper for all residents who wish to pay less to get somewhere.<br><br><br>
+        </div><br>
+        <div class="imgCard4 ">
+        <img class="news" src="busDriver.jpg"><br>
+        <u><b>Now Hiring:</b></u><br>
+        Do you know how to drive a bus? That's pretty much all you need to join our team! If you're interested, don't hesitate to send us an email containing:<br>
+          -Full Name<br>
+          -Date Of Birth<br>
+          -A proper scan of your driver's license
+      </div>
+        
+    </div><br>
+     
+    <div class="footer">
+      <div class="card">
+        <p class="cardTitle">Get In Touch</p><br>
+        <p><img src="google-maps.png">Aley District, Lebanon</p><br>
+        <p><img src="phone.png"> +961: 70408636 - 71134902</p><br>
+        <p><img src="gmail.png"> thecedarbuses@gmail.com</p><br>
+        <img class="socialLink" onclick="facebook()" src="facebook.png">
+        <img class="socialLink" onclick="instagram()" src="instagram.png">
+        <img class="socialLink" onclick="twitter()" src="twitter.png">
+        <img class="socialLink" onclick="pinterest()" src="pinterest.png">
+      </div>
+
+      <div class="card2">
+        <p class="cardTitle">QuickLinks</p><br>
+        <ul type="disc" style="padding-left: 30px;">
+          <li><a class="underlineLink" href="index.html">Home</a></li>
+          <li><a class="underlineLink" href="buses.php">Buses</a></li>
+          <li><a class="underlineLink" href="schedules.php">Schedules</a></li>
+          <li><a class="underlineLink" href="about.html">About</a></li>
+          <li><a class="underlineLink" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    
+
+  </body>
+</html>
+
+<script type="text/javascript" src="socialmedia.js">
+</script>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+   <!--------- <title>Responsive Navigation Menu</title>------>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+
+
+    .mission{
+    width: 40%;
+    margin-top: 70px;
+    height: auto;
+    margin-left: 7%;
+    border-color: grey;
+    border-style: none;
+    box-sizing: border-box;
+    box-shadow: 0 8px 16px 0 darkgrey ;
+
+    padding: 10px;
+    float: left;
+    }
+
+    .title{
+      color: green;
+      text-align: center;
+    }
+
+    .story{
+     width: 40%;
+     height: auto;
+     float: right;
+     margin-top: 70px;
+     margin-right: 7%;
+     border-color: grey;
+     border-style: none;
+     box-sizing: border-box;
+     box-shadow: 0 8px 16px 0 darkgrey ;
+
+     padding: 10px;
+    }
+
+    .services{
+     width: 40%;
+     margin-left: 30%;
+     height: auto;
+     margin-top: 300px;
+     border-color: grey;
+     border-style: none;
+     box-sizing: border-box;
+     box-shadow: 0 8px 16px 0 darkgrey ;
+ 
+     padding: 10px;
+    }
+
+    .meet{
+      text-align: center;
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    }
+
+    .button:hover {
+    background-color: #fff;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s;
+    }
+
+    .column1 {
+    margin-left:7%;
+    float: left;
+    width: 40%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    }
+
+    .column2 {
+    margin-right: 7%;
+    float: right;
+    width: 40%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .column1, .column2 {
+        width: 100%;
+        display: block;
+        float: left;
+        margin-left: 0;
+      }
+      .meetCard{
+        width: 100%;
+        height: auto;
+        float: left;
+      }
+      .img{
+        max-width: 60%;
+        height: auto;
+        margin-left: 20%;
+      }
+      .mission, .story, .services{
+        width: 100%;
+        height: auto;
+        float: left;
+        margin-left: 0;
+        margin-top: 5%;
+      }
+      .meet{
+        margin-top: 100px;
+      }
+    }
+
+    .meetCard {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+    }
+
+    .container {
+      padding: 0 16px;
+    }
+
+    .container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.img{
+  width: 60%;
+  margin-left: 20%;
+}
+
+    
+  </style>
+</head>
+<body>
+  <nav>
+      <div class="logo"><img class="busmap" src="bus.png" ></div><div class="logo">Track<font color="#33cc00
+"> Cedar</font> Buses</div>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars" onclick="hide()"></i>
+      </label>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a  href="buses.php">Buses</a></li>
+        <li>
+          <a class="hidden" href="schedules.php">Schedules</a>
+          <div class="dropdown">
+          <button class="dropbtn" onclick="schedules()">Schedule</button>
+          <div class="dropdown-content">
+            <a href="beirut-aley.php">Beirut - Aley</a>
+            <a href="beirut-tyr.php">Beirut - Tyr</a>
+            <a href="beirut-tripoli.php">Beirut - Tripoli</a>
+          </div>
+        </div></li>
+        <li><a href="signin.php">Sign In</a></li>
+        <li><a class="active" href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="top">
+      
+      <div id="top" class="mission"><h2 class="title">Our Mission</font></h2>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+
+      <div id="top" class="story"><h2 class="title">Our Story</h2>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div><br><br>
+
+      <div id="top" class="services"><h2 class="title">Our Services</h2>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div><br><br>
+
+      <div class="meet">
+        Meet the <font color="green">Team</font>
+      </div><br><br>
+
+      <div class="row">
+  <div class="column1">
+    <div class="meetCard">
+      <img class="img" src="walidimg.jpg">
+      <div class="container">
+        <h2>Walid Mougharbel</h2>
+        <p class="title1">Student</p>
+        <p>Third year Business Informatics student at the Lebanese University.</p>
+        <p>walid.mougharbel@st.ul.edu.lb</p><br>
+        <p><button class="button" onclick="contactWalid();">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="column2">
+    <div class="meetCard">
+      <img class="img" src="lilianeimg.jpg">
+      <div class="container">
+        <h2>Liliane Wehbe</font></h2>
+        <p class="title1">Student</p>
+        <p>Third year Business Informatics student at the Lebanese University.</p>
+        <p>liliane.wehbe1@st.ul.edu.lb</p><br>
+        <p><button class="button" onclick="contactLiliane()">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+      <div class="card">
+        <p class="cardTitle">Get In Touch</p><br>
+        <p><img src="google-maps.png">Aley District, Lebanon</p><br>
+        <p><img src="phone.png"> +961: 70408636 - 71134902</p><br>
+        <p><img src="gmail.png"> thecedarbuses@gmail.com</p><br>
+        <img class="socialLink" onclick="facebook()" src="facebook.png">
+        <img class="socialLink" onclick="instagram()" src="instagram.png">
+        <img class="socialLink" onclick="twitter()" src="twitter.png">
+        <img class="socialLink" onclick="pinterest()" src="pinterest.png">
+      </div>
+
+      <div class="card2">
+        <p class="cardTitle">QuickLinks</p><br>
+        <ul type="disc" style="padding-left: 30px;">
+          <li><a class="underlineLink" href="index.html">Home</a></li>
+          <li><a class="underlineLink" href="buses.php">Buses</a></li>
+          <li><a class="underlineLink" href="schedules.php">Schedules</a></li>
+          <li><a class="underlineLink" href="about.html">About</a></li>
+          <li><a class="underlineLink" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+</body>
+</html>
+
+<script src="socialmedia.js"></script>
+<script type="text/javascript">
+function contactWalid(){
+  onclick=location.href='mailto:walid.mougharbel@st.ul.edu.lb';
+}
+
+function contactLiliane(){
+  onclick=location.href='mailto:liliane.wehbe1@st.ul.edu.lb';
+}
+
+
+</script>
